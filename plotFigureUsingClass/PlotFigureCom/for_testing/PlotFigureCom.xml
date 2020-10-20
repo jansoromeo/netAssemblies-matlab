@@ -1,48 +1,49 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>PlotFigureCompNative</name>
+        <name>PlotFigureCom</name>
     </assembly>
     <members>
-        <member name="T:PlotFigureCompNative.Class1">
+        <member name="T:PlotFigureCom.Class1">
             <summary>
-            The Class1 class provides a CLS compliant, Object (native) interface to the MATLAB
+            The Class1 class provides a CLS compliant, MWArray interface to the MATLAB
             functions contained in the files:
             <newpara></newpara>
-            \\Mac\Home\Dropbox (Personal)\Work\Git_Repo\misc\netAssembly\PlotFigure.m
+            \\Mac\Home\Dropbox
+            (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigure.m
             </summary>
             <remarks>
             @Version 1.0
             </remarks>
         </member>
-        <member name="M:PlotFigureCompNative.Class1.#cctor">
+        <member name="M:PlotFigureCom.Class1.#cctor">
             <summary internal= "true">
             The static constructor instantiates and initializes the MATLAB Runtime instance.
             </summary>
         </member>
-        <member name="M:PlotFigureCompNative.Class1.#ctor">
+        <member name="M:PlotFigureCom.Class1.#ctor">
             <summary>
             Constructs a new instance of the Class1 class.
             </summary>
         </member>
-        <member name="M:PlotFigureCompNative.Class1.Finalize">
+        <member name="M:PlotFigureCom.Class1.Finalize">
             <summary internal= "true">
             Class destructor called by the CLR garbage collector.
             </summary>
         </member>
-        <member name="M:PlotFigureCompNative.Class1.Dispose">
+        <member name="M:PlotFigureCom.Class1.Dispose">
             <summary>
             Frees the native resources associated with this object
             </summary>
         </member>
-        <member name="M:PlotFigureCompNative.Class1.Dispose(System.Boolean)">
+        <member name="M:PlotFigureCom.Class1.Dispose(System.Boolean)">
             <summary internal= "true">
             Internal dispose function
             </summary>
         </member>
-        <member name="M:PlotFigureCompNative.Class1.PlotFigure">
+        <member name="M:PlotFigureCom.Class1.PlotFigure">
              <summary>
-             Provides a void output, 0-input Objectinterface to the PlotFigure MATLAB
+             Provides a void output, 0-input MWArrayinterface to the PlotFigure MATLAB
              function.
              </summary>
              <remarks>
@@ -51,22 +52,23 @@
              </remarks>
             
         </member>
-        <member name="M:PlotFigureCompNative.Class1.PlotFigure(System.Object[])">
+        <member name="M:PlotFigureCom.Class1.PlotFigure(MathWorks.MATLAB.NET.Arrays.MWArray[])">
              <summary>
-             Provides a void output, 1-input Objectinterface to the PlotFigure MATLAB
+             Provides a void output, 1-input MWArrayinterface to the PlotFigure MATLAB
              function.
              </summary>
              <remarks>
              M-Documentation:
              setup up figure
              </remarks>
-             <param name="varargin">Array of Objects representing the input arguments 1
+             <param name="varargin">Array of MWArrays representing the input arguments 1
              through varargin.length</param>
             
         </member>
-        <member name="M:PlotFigureCompNative.Class1.PlotFigure(System.Int32)">
+        <member name="M:PlotFigureCom.Class1.PlotFigure(System.Int32)">
              <summary>
-             Provides the standard 0-input Object interface to the PlotFigure MATLAB function.
+             Provides the standard 0-input MWArray interface to the PlotFigure MATLAB
+             function.
              </summary>
              <remarks>
              M-Documentation:
@@ -77,25 +79,26 @@
              arguments.</returns>
             
         </member>
-        <member name="M:PlotFigureCompNative.Class1.PlotFigure(System.Int32,System.Object[])">
+        <member name="M:PlotFigureCom.Class1.PlotFigure(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[])">
              <summary>
-             Provides the standard 1-input Object interface to the PlotFigure MATLAB function.
+             Provides the standard 1-input MWArray interface to the PlotFigure MATLAB
+             function.
              </summary>
              <remarks>
              M-Documentation:
              setup up figure
              </remarks>
              <param name="numArgsOut">The number of output arguments to return.</param>
-             <param name="varargin">Array of Objects representing the input arguments 1
+             <param name="varargin">Array of MWArrays representing the input arguments 1
              through varargin.length</param>
              <returns>An Array of length "numArgsOut" containing the output
              arguments.</returns>
             
         </member>
-        <member name="M:PlotFigureCompNative.Class1.PlotFigure(System.Int32,System.Object[]@,System.Object[],System.Object[])">
+        <member name="M:PlotFigureCom.Class1.PlotFigure(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
              <summary>
              Provides an interface for the PlotFigure function in which the input and output
-             arguments are specified as an array of Objects.
+             arguments are specified as an array of MWArrays.
              </summary>
              <remarks>
              This method will allocate and return by reference the output argument
@@ -104,13 +107,11 @@
              setup up figure
              </remarks>
              <param name="numArgsOut">The number of output arguments to return</param>
-             <param name= "argsOut">Array of Object output arguments</param>
-             <param name= "argsIn">Array of Object input arguments</param>
-             <param name= "varArgsIn">Array of Object representing variable input
-             arguments</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
             
         </member>
-        <member name="M:PlotFigureCompNative.Class1.WaitForFiguresToDie">
+        <member name="M:PlotFigureCom.Class1.WaitForFiguresToDie">
              <summary>
              This method will cause a MATLAB figure window to behave as a modal dialog box.
              The method will not return until all the figure windows associated with this

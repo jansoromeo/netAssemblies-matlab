@@ -1,0 +1,9 @@
+LIBRARY PlotFigure
+EXPORTS
+PlotFigureInitialize
+PlotFigureInitializeWithHandlers
+PlotFigureTerminate
+PlotFigurePrintStackTrace
+mlxPlotFigure
+mlfPlotFigure
+

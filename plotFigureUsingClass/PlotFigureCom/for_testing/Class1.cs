@@ -1,11 +1,12 @@
 /*
 * MATLAB Compiler: 8.1 (R2020b)
-* Date: Mon Oct 19 10:25:35 2020
+* Date: Mon Oct 19 14:33:27 2020
 * Arguments:
-* "-B""macro_default""-W""dotnet:PlotFigureComp,Class1,4.0,private,version=1.0""-T""link:l
-* ib""-d""\\Mac\Home\Dropbox
-* (Personal)\Work\Git_Repo\misc\netAssembly\PlotFigureComp\for_testing""-v""class{Class1:\
-* \Mac\Home\Dropbox (Personal)\Work\Git_Repo\misc\netAssembly\PlotFigure.m}"
+* "-B""macro_default""-W""dotnet:PlotFigureCom,Class1,4.0,private,version=1.0""-T""link:li
+* b""-d""\\Mac\Home\Dropbox
+* (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigureCom\for_tes
+* ting""-v""class{Class1:\\Mac\Home\Dropbox
+* (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigure.m}"
 */
 using System;
 using System.Reflection;
@@ -17,14 +18,15 @@ using MathWorks.MATLAB.NET.Utility;
 [assembly: System.Reflection.AssemblyKeyFile(@"")]
 #endif
 
-namespace PlotFigureCompNative
+namespace PlotFigureCom
 {
 
   /// <summary>
-  /// The Class1 class provides a CLS compliant, Object (native) interface to the MATLAB
+  /// The Class1 class provides a CLS compliant, MWArray interface to the MATLAB
   /// functions contained in the files:
   /// <newpara></newpara>
-  /// \\Mac\Home\Dropbox (Personal)\Work\Git_Repo\misc\netAssembly\PlotFigure.m
+  /// \\Mac\Home\Dropbox
+  /// (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigure.m
   /// </summary>
   /// <remarks>
   /// @Version 1.0
@@ -55,7 +57,7 @@ namespace PlotFigureCompNative
 
           ctfFilePath= ctfFilePath.Remove(lastDelimiter, (ctfFilePath.Length - lastDelimiter));
 
-          string ctfFileName = "PlotFigureComp.ctf";
+          string ctfFileName = "PlotFigureCom.ctf";
 
           Stream embeddedCtfStream = null;
 
@@ -144,7 +146,7 @@ namespace PlotFigureCompNative
     #region Methods
 
     /// <summary>
-    /// Provides a void output, 0-input Objectinterface to the PlotFigure MATLAB
+    /// Provides a void output, 0-input MWArrayinterface to the PlotFigure MATLAB
     /// function.
     /// </summary>
     /// <remarks>
@@ -154,29 +156,30 @@ namespace PlotFigureCompNative
     ///
     public void PlotFigure()
     {
-      mcr.EvaluateFunction(0, "PlotFigure", new Object[]{});
+      mcr.EvaluateFunction(0, "PlotFigure", new MWArray[]{});
     }
 
 
     /// <summary>
-    /// Provides a void output, 1-input Objectinterface to the PlotFigure MATLAB
+    /// Provides a void output, 1-input MWArrayinterface to the PlotFigure MATLAB
     /// function.
     /// </summary>
     /// <remarks>
     /// M-Documentation:
     /// setup up figure
     /// </remarks>
-    /// <param name="varargin">Array of Objects representing the input arguments 1
+    /// <param name="varargin">Array of MWArrays representing the input arguments 1
     /// through varargin.length</param>
     ///
-    public void PlotFigure(params Object[] varargin)
+    public void PlotFigure(params MWArray[] varargin)
     {
       mcr.EvaluateFunction(0, "PlotFigure", varargin);
     }
 
 
     /// <summary>
-    /// Provides the standard 0-input Object interface to the PlotFigure MATLAB function.
+    /// Provides the standard 0-input MWArray interface to the PlotFigure MATLAB
+    /// function.
     /// </summary>
     /// <remarks>
     /// M-Documentation:
@@ -186,26 +189,27 @@ namespace PlotFigureCompNative
     /// <returns>An Array of length "numArgsOut" containing the output
     /// arguments.</returns>
     ///
-    public Object[] PlotFigure(int numArgsOut)
+    public MWArray[] PlotFigure(int numArgsOut)
     {
-      return mcr.EvaluateFunction(numArgsOut, "PlotFigure", new Object[]{});
+      return mcr.EvaluateFunction(numArgsOut, "PlotFigure", new MWArray[]{});
     }
 
 
     /// <summary>
-    /// Provides the standard 1-input Object interface to the PlotFigure MATLAB function.
+    /// Provides the standard 1-input MWArray interface to the PlotFigure MATLAB
+    /// function.
     /// </summary>
     /// <remarks>
     /// M-Documentation:
     /// setup up figure
     /// </remarks>
     /// <param name="numArgsOut">The number of output arguments to return.</param>
-    /// <param name="varargin">Array of Objects representing the input arguments 1
+    /// <param name="varargin">Array of MWArrays representing the input arguments 1
     /// through varargin.length</param>
     /// <returns>An Array of length "numArgsOut" containing the output
     /// arguments.</returns>
     ///
-    public Object[] PlotFigure(int numArgsOut, params Object[] varargin)
+    public MWArray[] PlotFigure(int numArgsOut, params MWArray[] varargin)
     {
       return mcr.EvaluateFunction(numArgsOut, "PlotFigure", varargin);
     }
@@ -213,7 +217,7 @@ namespace PlotFigureCompNative
 
     /// <summary>
     /// Provides an interface for the PlotFigure function in which the input and output
-    /// arguments are specified as an array of Objects.
+    /// arguments are specified as an array of MWArrays.
     /// </summary>
     /// <remarks>
     /// This method will allocate and return by reference the output argument
@@ -222,16 +226,15 @@ namespace PlotFigureCompNative
     /// setup up figure
     /// </remarks>
     /// <param name="numArgsOut">The number of output arguments to return</param>
-    /// <param name= "argsOut">Array of Object output arguments</param>
-    /// <param name= "argsIn">Array of Object input arguments</param>
-    /// <param name= "varArgsIn">Array of Object representing variable input
-    /// arguments</param>
+    /// <param name= "argsOut">Array of MWArray output arguments</param>
+    /// <param name= "argsIn">Array of MWArray input arguments</param>
     ///
-    [MATLABSignature("PlotFigure", 0, 1, 1)]
-    protected void PlotFigure(int numArgsOut, ref Object[] argsOut, Object[] argsIn, params Object[] varArgsIn)
+    public void PlotFigure(int numArgsOut, ref MWArray[] argsOut, MWArray[] argsIn)
     {
-        mcr.EvaluateFunctionForTypeSafeCall("PlotFigure", numArgsOut, ref argsOut, argsIn, varArgsIn);
+      mcr.EvaluateFunction("PlotFigure", numArgsOut, ref argsOut, argsIn);
     }
+
+
 
     /// <summary>
     /// This method will cause a MATLAB figure window to behave as a modal dialog box.

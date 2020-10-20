@@ -1,0 +1,7 @@
+PlotFigureInitialize
+PlotFigureInitializeWithHandlers
+PlotFigureTerminate
+PlotFigurePrintStackTrace
+mlxPlotFigure
+mlfPlotFigure
+
