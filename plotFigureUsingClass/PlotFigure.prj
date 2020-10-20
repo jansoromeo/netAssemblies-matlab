@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigure.prj" location="\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass" name="PlotFigure" target="target.ezdeploy.library" target-name="Library Compiler">
+  <configuration build-checksum="1002152347" file="\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigure.prj" location="\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass" name="PlotFigure" preferred-package-location="\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigure\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.library" target-name="Library Compiler">
     <param.appname>PlotFigure</param.appname>
     <param.icon />
     <param.icons />
@@ -22,7 +22,7 @@
     <param.logdir>${PROJECT_ROOT}\PlotFigure</param.logdir>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
-    <param.target.type>subtarget.library.c</param.target.type>
+    <param.target.type>subtarget.net.component</param.target.type>
     <param.support.packages />
     <param.namespace />
     <param.classorg />
@@ -70,7 +70,6 @@
       <param.logdir />
       <param.enable.clean.build />
       <param.user.defined.mcr.options />
-      <param.target.type />
       <param.support.packages />
       <param.namespace />
       <param.classorg />
@@ -113,9 +112,9 @@
     <fileset.examples />
     <fileset.documentation />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\PlotFigure\for_testing" name="PlotFigure.h" optional="false">\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigure\for_testing\PlotFigure.h</file>
-      <file location="${PROJECT_ROOT}\PlotFigure\for_testing" name="PlotFigure.lib" optional="false">\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigure\for_testing\PlotFigure.lib</file>
+      <file location="${PROJECT_ROOT}\PlotFigure\for_testing" name="PlotFigure_overview.html" optional="false">\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigure\for_testing\PlotFigure_overview.html</file>
       <file location="${PROJECT_ROOT}\PlotFigure\for_testing" name="PlotFigure.dll" optional="false">\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigure\for_testing\PlotFigure.dll</file>
+      <file location="${PROJECT_ROOT}\PlotFigure\for_testing" name="PlotFigureNative.dll" optional="false">\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigureUsingClass\PlotFigure\for_testing\PlotFigureNative.dll</file>
     </build-deliverables>
     <workflow />
     <matlab>

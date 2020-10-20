@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Getting Started with the PlotFigure C Shared Library</title>
+        <title>Getting Started with the PlotFigure .NET Assembly</title>
         <style type="text/css">
             .rtcContent { padding: 20px; }
             .S0 {padding:0 61px 2px 0; margin-bottom: 16px; border-bottom: 1px solid #cbcbcb; background-position: right 6px; background-repeat: no-repeat; background-size: 58px; color: #c45400; font: normal normal 22px/1.136 Arial,Helvetica,sans-serif; }
@@ -13,31 +13,34 @@
     </head>
     <body>
         <div class = rtcContent>
-            <h1  class = 'S0'><span>Getting Started with the PlotFigure C Shared Library</span></h1>
-                <div  class = 'S1'><span>The Library Compiler in MATLAB&reg; Compiler SDK&trade; creates C shared libraries that can be integrated with applications written in C. You can use this guide to set up your environment and learn about integrating the library into your application.</span></div>
+            <h1  class = 'S0'><span>Getting Started with the PlotFigure .NET Assembly</span></h1>
+                <div  class = 'S1'><span>The Library Compiler in MATLAB&reg; Compiler SDK&trade; creates Microsoft&reg; .NET Assemblies that can be integrated with applications written in .NET. It also generates sample .NET driver code that can be used to integrate and test the generated components. You can use this guide to set up your environment and run your sample driver application.</span></div>
+                <div  class = 'S1'><span>Note: Sample .NET driver code is only generated if sample MATLAB code is included during the packaging phase.  Samples can be found in the folder named "samples".</span></div>
                 <div  class = 'S1'><span></span></div>
-            <h2  class = 'S2'><span>Location of Installed C Shared Library Files</span></h2>
+            <h2  class = 'S2'><span>Location of Installed .Net Assembly Files</span></h2>
                 <div  class = 'S1'><span><a href=".">View PlotFigure Files</a></span></div>
+                <div  class = 'S1'><span></span></div>
                 <div  class = 'S1'><span></span></div>
             <h2  class = 'S2'><span>Prerequisites</span></h2>
                 <div  class = 'S1'><span>1. <a href="https://www.mathworks.com/help/compiler/install-the-matlab-runtime.html">Install and Configure the MATLAB Runtime</a></span></div>
-                <div  class = 'S1'><span> Complete this step only if you have not installed the MATLAB Runtime while installing the library. </span></div>
-                <div  class = 'S1'><span>2. Verify that you have a C compiler installed.</span></div>
-                <div  class = 'S1'><span> You can use the mbuild command within MATLAB to verify whether you have a C compiler installed. For more information, see <a href="https://www.mathworks.com/help/compiler_sdk/ml_code/mbuild.html">mbuild</a>.</span></div>
+                <div  class = 'S1'><span> Complete this step only if you have not installed the MATLAB Runtime while installing the .NET Assembly. </span></div>
+                <div  class = 'S1'><span>2. <a href="https://www.mathworks.com/help/compiler_sdk/dotnet/matlab-builder-ne-prerequisites.html">Configure the .NET Environment</a></span></div>
                 <div  class = 'S1'><span></span></div>
-            <h2  class = 'S2'><span>Compiling C Driver Applications</span></h2>
+            <h2  class = 'S2'><span>Compiling .NET Driver Applications</span></h2>
                 <div  class = 'S1'><span>At the system terminal, type:</span></div>
-                <div  class = 'code'><pre>mbuild driverApplication.c PlotFigure.lib</pre></div>
-                <div  class = 'S1'><span><a href="https://www.mathworks.com/help/compiler_sdk/ml_code/mbuild.html">Learn more about mbuild</a></span></div>
-                <div  class = 'S1'><span></span></div>
-            <h2  class = 'S2'><span>Executing C Driver Applications</span></h2>
+                <div  class = 'code'><pre>csc.exe /target:exe /out:driverApplication.exe /r:PlotFigure.dll /r:%RUNTIME_ROOT%\toolbox\dotnetbuilder\bin\win64\v4.0\MWArray.dll driverApplication.cs</pre></div>
+                <div  class = 'S1'><span>Replace %RUNTIME_ROOT% with the installation folder of the MATLAB Runtime</span></div>
+                <div  class = 'S1'><span>Note: You will need write permissions to the folder where you are compiling your driver application. If you do not have write permissions, copy the sample and generated component to a folder with write permissions, and then compile your driver application.</span></div>
+            <div  class = 'S1'><span></span></div>
+            <h2  class = 'S2'><span>Executing .NET Driver Applications</span></h2>
                 <div  class = 'S1'><span>At the system terminal, type:</span></div>
                 <div  class = 'code'><pre>driverApplication.exe</pre></div>
                 <div  class = 'S1'><span></span></div>
             <h2  class = 'S2'><span>Additional Resources</span></h2>
-                <div  class = 'S1'><span><a href="https://www.mathworks.com/help/compiler_sdk/C_shared_libraries.html">C Shared Library Integration</a></span></div>
+                <div  class = 'S1'><span><a href="https://www.mathworks.com/help/compiler_sdk/dotnet_assemblies.html">.NET Assembly Integration</a></span></div>
                 <div  class = 'S1'><span></span></div>
-                <div  class = 'S1'><span><a href="https://www.mathworks.com/help/matlab/apiref/mxarray.html">C mxArray API</a></span></div>
+                <div  class = 'S1'><span><a href="https://www.mathworks.com/help/dotnetbuilder/MWArrayAPI/html/N_MathWorks_MATLAB_NET_Arrays.htm">.NET MWArray API</a></span></div>
+                <div  class = 'S1'><span></span></div>
                 <div  class = 'S1'><span></span></div>
         </div>
     <br>
