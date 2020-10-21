@@ -1,4 +1,4 @@
-PlotFigureCom MATLAB .NET Assembly (.NET Component)
+PlotFigure_wFunctionsCom MATLAB .NET Assembly (.NET Component)
 
 1. Prerequisites for Deployment 
 
@@ -22,9 +22,9 @@ in the MathWorks Documentation Center.
 
 2. Files to Deploy and Package
 
--PlotFigureCom.dll
+-PlotFigure_wFunctionsCom.dll
    -contains the generated component using MWArray API. 
--PlotFigureComNative.dll
+-PlotFigure_wFunctionsComNative.dll
    -contains the generated component using native API.
 -This readme file
     Note: if end users are unable to download the MATLAB Runtime using the
@@ -40,16 +40,19 @@ MWArray.xml - This file contains the code comments for the MWArray data conversi
               distrib directory or in
               <mcr_root>*\toolbox\dotnetbuilder\bin\win64\v4.0
 
-PlotFigureCom_overview.html - HTML overview documentation file for the generated 
-                              component. It contains the requirements for accessing the 
-                              component and for generating arguments using the MWArray 
-                              class hierarchy.
+PlotFigure_wFunctionsCom_overview.html - HTML overview documentation file for the 
+                                         generated component. It contains the 
+                                         requirements for accessing the component and for 
+                                         generating arguments using the MWArray class 
+                                         hierarchy.
 
-PlotFigureCom.xml - This file contains the code comments for the PlotFigureCom component 
-                              classes and methods. Using a third party documentation 
-                              tool, this file can be combined with either or both of the 
-                              previous files to generate online documentation for the 
-                              PlotFigureCom component.
+PlotFigure_wFunctionsCom.xml - This file contains the code comments for the 
+                                         PlotFigure_wFunctionsCom component classes and 
+                                         methods. Using a third party documentation tool, 
+                                         this file can be combined with either or both of 
+                                         the previous files to generate online 
+                                         documentation for the PlotFigure_wFunctionsCom 
+                                         component.
 
 
 3. Resources

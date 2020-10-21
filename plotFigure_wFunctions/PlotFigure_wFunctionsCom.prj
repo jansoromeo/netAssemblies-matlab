@@ -1,6 +1,6 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotFigureCom.prj" location="\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions" name="PlotFigureCom" target="target.ezdeploy.library" target-name="Library Compiler">
-    <param.appname>PlotFigureCom</param.appname>
+  <configuration file="\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotFigure_wFunctionsCom.prj" location="\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions" name="PlotFigure_wFunctionsCom" target="target.ezdeploy.library" target-name="Library Compiler">
+    <param.appname>PlotFigure_wFunctionsCom</param.appname>
     <param.icon />
     <param.icons />
     <param.version>1.0</param.version>
@@ -11,15 +11,15 @@
     <param.description />
     <param.screenshot />
     <param.guid />
-    <param.installpath.string>\PlotFigureCom\</param.installpath.string>
+    <param.installpath.string>\PlotFigure_wFunctionsCom\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
     <param.target.install.notes />
-    <param.intermediate>${PROJECT_ROOT}\PlotFigureCom\for_testing</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}\PlotFigureCom\for_redistribution_files_only</param.files.only>
-    <param.output>${PROJECT_ROOT}\PlotFigureCom\for_redistribution</param.output>
-    <param.logdir>${PROJECT_ROOT}\PlotFigureCom</param.logdir>
+    <param.intermediate>${PROJECT_ROOT}\PlotFigure_wFunctionsCom\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\PlotFigure_wFunctionsCom\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\PlotFigure_wFunctionsCom\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\PlotFigure_wFunctionsCom</param.logdir>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
     <param.target.type>subtarget.net.component</param.target.type>
@@ -123,9 +123,9 @@
     </fileset.examples>
     <fileset.documentation />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\PlotFigureCom\for_testing" name="PlotFigureComNative.dll" optional="false">\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotFigureCom\for_testing\PlotFigureComNative.dll</file>
-      <file location="${PROJECT_ROOT}\PlotFigureCom\for_testing" name="PlotFigureCom_overview.html" optional="false">\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotFigureCom\for_testing\PlotFigureCom_overview.html</file>
-      <file location="${PROJECT_ROOT}\PlotFigureCom\for_testing" name="PlotFigureCom.dll" optional="false">\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotFigureCom\for_testing\PlotFigureCom.dll</file>
+      <file location="${PROJECT_ROOT}\PlotFigure_wFunctionsCom\for_testing" name="PlotFigure_wFunctionsCom_overview.html" optional="false">\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotFigure_wFunctionsCom\for_testing\PlotFigure_wFunctionsCom_overview.html</file>
+      <file location="${PROJECT_ROOT}\PlotFigure_wFunctionsCom\for_testing" name="PlotFigure_wFunctionsComNative.dll" optional="false">\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotFigure_wFunctionsCom\for_testing\PlotFigure_wFunctionsComNative.dll</file>
+      <file location="${PROJECT_ROOT}\PlotFigure_wFunctionsCom\for_testing" name="PlotFigure_wFunctionsCom.dll" optional="false">\\Mac\Home\Dropbox (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotFigure_wFunctionsCom\for_testing\PlotFigure_wFunctionsCom.dll</file>
     </build-deliverables>
     <workflow />
     <matlab>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using MathWorks.MATLAB.NET.Arrays;
 using MathWorks.MATLAB.NET.Utility;
-using PlotFigureCom;
+using PlotFigure_wFunctionsCom;
 
 /// <summary>
 /// Sample driver code that integrates a compiled MATLAB function

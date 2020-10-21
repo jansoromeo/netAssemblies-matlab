@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using MathWorks.MATLAB.NET.Arrays;
 using MathWorks.MATLAB.NET.Utility;
-using PlotFigureCom;
+using PlotFigure_wFunctionsCom;
 
 /// <summary>
 /// Sample driver code that integrates a compiled MATLAB function
@@ -12,7 +12,7 @@ using PlotFigureCom;
 /// Refer to the MATLAB Compiler SDK documentation for more
 /// information.
 /// </summary>
-class InitFigureSample1 {
+class plotDummyDataSample1 {
 
 	static Class1 class1Instance;
 
@@ -21,12 +21,12 @@ class InitFigureSample1 {
 	}
 
 	/// <summary>
-	/// Example of using the InitFigure function.
+	/// Example of using the plotDummyData function.
 	/// </summary>
-	public static void InitFigureSample() {
+	public static void PlotDummyDataSample() {
 		Object[] results = null;
 		try {
-			results = class1Instance.InitFigure();
+			results = class1Instance.plotDummyData();
 		} catch (Exception e) {
 			Console.WriteLine(e);
 		}
@@ -43,7 +43,7 @@ class InitFigureSample1 {
 			Environment.Exit(1);
 		}
 		try {
-			InitFigureSample();
+			PlotDummyDataSample();
 		} catch (Exception e) {
 			Console.WriteLine(e);
 			Environment.Exit(1);

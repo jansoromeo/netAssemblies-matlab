@@ -1,11 +1,11 @@
 /*
 * MATLAB Compiler: 8.1 (R2020b)
-* Date: Wed Oct 21 14:58:53 2020
+* Date: Wed Oct 21 15:24:05 2020
 * Arguments:
-* "-B""macro_default""-W""dotnet:PlotFigureCom,Class1,4.0,private,version=1.0""-T""link:li
-* b""-d""\\Mac\Home\Dropbox
-* (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotFigureCom\for_te
-* sting""-v""class{Class1:\\Mac\Home\Dropbox
+* "-B""macro_default""-W""dotnet:PlotFigure_wFunctionsCom,Class1,4.0,private,version=1.0""
+* -T""link:lib""-d""\\Mac\Home\Dropbox
+* (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotFigure_wFunction
+* sCom\for_testing""-v""class{Class1:\\Mac\Home\Dropbox
 * (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\getLineCoordinates.m
 * ,\\Mac\Home\Dropbox
 * (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\InitFigure.m,\\Mac\H
@@ -24,11 +24,11 @@ using MathWorks.MATLAB.NET.Utility;
 [assembly: System.Reflection.AssemblyKeyFile(@"")]
 #endif
 
-namespace PlotFigureComNative
+namespace PlotFigure_wFunctionsCom
 {
 
   /// <summary>
-  /// The Class1 class provides a CLS compliant, Object (native) interface to the MATLAB
+  /// The Class1 class provides a CLS compliant, MWArray interface to the MATLAB
   /// functions contained in the files:
   /// <newpara></newpara>
   /// \\Mac\Home\Dropbox
@@ -73,7 +73,7 @@ namespace PlotFigureComNative
 
           ctfFilePath= ctfFilePath.Remove(lastDelimiter, (ctfFilePath.Length - lastDelimiter));
 
-          string ctfFileName = "PlotFigureCom.ctf";
+          string ctfFileName = "PlotFigure_wFunctionsCom.ctf";
 
           Stream embeddedCtfStream = null;
 
@@ -162,21 +162,21 @@ namespace PlotFigureComNative
     #region Methods
 
     /// <summary>
-    /// Provides a single output, 0-input Objectinterface to the getLineCoordinates
+    /// Provides a single output, 0-input MWArrayinterface to the getLineCoordinates
     /// MATLAB function.
     /// </summary>
     /// <remarks>
     /// </remarks>
-    /// <returns>An Object containing the first output argument.</returns>
+    /// <returns>An MWArray containing the first output argument.</returns>
     ///
-    public Object getLineCoordinates()
+    public MWArray getLineCoordinates()
     {
-      return mcr.EvaluateFunction("getLineCoordinates", new Object[]{});
+      return mcr.EvaluateFunction("getLineCoordinates", new MWArray[]{});
     }
 
 
     /// <summary>
-    /// Provides the standard 0-input Object interface to the getLineCoordinates MATLAB
+    /// Provides the standard 0-input MWArray interface to the getLineCoordinates MATLAB
     /// function.
     /// </summary>
     /// <remarks>
@@ -185,34 +185,34 @@ namespace PlotFigureComNative
     /// <returns>An Array of length "numArgsOut" containing the output
     /// arguments.</returns>
     ///
-    public Object[] getLineCoordinates(int numArgsOut)
+    public MWArray[] getLineCoordinates(int numArgsOut)
     {
-      return mcr.EvaluateFunction(numArgsOut, "getLineCoordinates", new Object[]{});
+      return mcr.EvaluateFunction(numArgsOut, "getLineCoordinates", new MWArray[]{});
     }
 
 
     /// <summary>
     /// Provides an interface for the getLineCoordinates function in which the input and
     /// output
-    /// arguments are specified as an array of Objects.
+    /// arguments are specified as an array of MWArrays.
     /// </summary>
     /// <remarks>
     /// This method will allocate and return by reference the output argument
     /// array.<newpara></newpara>
     /// </remarks>
     /// <param name="numArgsOut">The number of output arguments to return</param>
-    /// <param name= "argsOut">Array of Object output arguments</param>
-    /// <param name= "argsIn">Array of Object input arguments</param>
-    /// <param name= "varArgsIn">Array of Object representing variable input
-    /// arguments</param>
+    /// <param name= "argsOut">Array of MWArray output arguments</param>
+    /// <param name= "argsIn">Array of MWArray input arguments</param>
     ///
-    [MATLABSignature("getLineCoordinates", 0, 1, 0)]
-    protected void getLineCoordinates(int numArgsOut, ref Object[] argsOut, Object[] argsIn, params Object[] varArgsIn)
+    public void getLineCoordinates(int numArgsOut, ref MWArray[] argsOut, MWArray[] 
+                         argsIn)
     {
-        mcr.EvaluateFunctionForTypeSafeCall("getLineCoordinates", numArgsOut, ref argsOut, argsIn, varArgsIn);
+      mcr.EvaluateFunction("getLineCoordinates", numArgsOut, ref argsOut, argsIn);
     }
+
+
     /// <summary>
-    /// Provides a void output, 0-input Objectinterface to the InitFigure MATLAB
+    /// Provides a void output, 0-input MWArrayinterface to the InitFigure MATLAB
     /// function.
     /// </summary>
     /// <remarks>
@@ -222,12 +222,13 @@ namespace PlotFigureComNative
     ///
     public void InitFigure()
     {
-      mcr.EvaluateFunction(0, "InitFigure", new Object[]{});
+      mcr.EvaluateFunction(0, "InitFigure", new MWArray[]{});
     }
 
 
     /// <summary>
-    /// Provides the standard 0-input Object interface to the InitFigure MATLAB function.
+    /// Provides the standard 0-input MWArray interface to the InitFigure MATLAB
+    /// function.
     /// </summary>
     /// <remarks>
     /// M-Documentation:
@@ -237,74 +238,53 @@ namespace PlotFigureComNative
     /// <returns>An Array of length "numArgsOut" containing the output
     /// arguments.</returns>
     ///
-    public Object[] InitFigure(int numArgsOut)
+    public MWArray[] InitFigure(int numArgsOut)
     {
-      return mcr.EvaluateFunction(numArgsOut, "InitFigure", new Object[]{});
+      return mcr.EvaluateFunction(numArgsOut, "InitFigure", new MWArray[]{});
     }
 
 
     /// <summary>
-    /// Provides an interface for the InitFigure function in which the input and output
-    /// arguments are specified as an array of Objects.
-    /// </summary>
-    /// <remarks>
-    /// This method will allocate and return by reference the output argument
-    /// array.<newpara></newpara>
-    /// M-Documentation:
-    /// close and clean up previous figures 
-    /// </remarks>
-    /// <param name="numArgsOut">The number of output arguments to return</param>
-    /// <param name= "argsOut">Array of Object output arguments</param>
-    /// <param name= "argsIn">Array of Object input arguments</param>
-    /// <param name= "varArgsIn">Array of Object representing variable input
-    /// arguments</param>
-    ///
-    [MATLABSignature("InitFigure", 0, 0, 0)]
-    protected void InitFigure(int numArgsOut, ref Object[] argsOut, Object[] argsIn, params Object[] varArgsIn)
-    {
-        mcr.EvaluateFunctionForTypeSafeCall("InitFigure", numArgsOut, ref argsOut, argsIn, varArgsIn);
-    }
-    /// <summary>
-    /// Provides a void output, 0-input Objectinterface to the PlotData MATLAB function.
+    /// Provides a void output, 0-input MWArrayinterface to the PlotData MATLAB function.
     /// </summary>
     /// <remarks>
     /// </remarks>
     ///
     public void PlotData()
     {
-      mcr.EvaluateFunction(0, "PlotData", new Object[]{});
+      mcr.EvaluateFunction(0, "PlotData", new MWArray[]{});
     }
 
 
     /// <summary>
-    /// Provides a void output, 1-input Objectinterface to the PlotData MATLAB function.
+    /// Provides a void output, 1-input MWArrayinterface to the PlotData MATLAB function.
     /// </summary>
     /// <remarks>
     /// </remarks>
     /// <param name="x">Input argument #1</param>
     ///
-    public void PlotData(Object x)
+    public void PlotData(MWArray x)
     {
       mcr.EvaluateFunction(0, "PlotData", x);
     }
 
 
     /// <summary>
-    /// Provides a void output, 2-input Objectinterface to the PlotData MATLAB function.
+    /// Provides a void output, 2-input MWArrayinterface to the PlotData MATLAB function.
     /// </summary>
     /// <remarks>
     /// </remarks>
     /// <param name="x">Input argument #1</param>
     /// <param name="y">Input argument #2</param>
     ///
-    public void PlotData(Object x, Object y)
+    public void PlotData(MWArray x, MWArray y)
     {
       mcr.EvaluateFunction(0, "PlotData", x, y);
     }
 
 
     /// <summary>
-    /// Provides the standard 0-input Object interface to the PlotData MATLAB function.
+    /// Provides the standard 0-input MWArray interface to the PlotData MATLAB function.
     /// </summary>
     /// <remarks>
     /// </remarks>
@@ -312,14 +292,14 @@ namespace PlotFigureComNative
     /// <returns>An Array of length "numArgsOut" containing the output
     /// arguments.</returns>
     ///
-    public Object[] PlotData(int numArgsOut)
+    public MWArray[] PlotData(int numArgsOut)
     {
-      return mcr.EvaluateFunction(numArgsOut, "PlotData", new Object[]{});
+      return mcr.EvaluateFunction(numArgsOut, "PlotData", new MWArray[]{});
     }
 
 
     /// <summary>
-    /// Provides the standard 1-input Object interface to the PlotData MATLAB function.
+    /// Provides the standard 1-input MWArray interface to the PlotData MATLAB function.
     /// </summary>
     /// <remarks>
     /// </remarks>
@@ -328,14 +308,14 @@ namespace PlotFigureComNative
     /// <returns>An Array of length "numArgsOut" containing the output
     /// arguments.</returns>
     ///
-    public Object[] PlotData(int numArgsOut, Object x)
+    public MWArray[] PlotData(int numArgsOut, MWArray x)
     {
       return mcr.EvaluateFunction(numArgsOut, "PlotData", x);
     }
 
 
     /// <summary>
-    /// Provides the standard 2-input Object interface to the PlotData MATLAB function.
+    /// Provides the standard 2-input MWArray interface to the PlotData MATLAB function.
     /// </summary>
     /// <remarks>
     /// </remarks>
@@ -345,33 +325,14 @@ namespace PlotFigureComNative
     /// <returns>An Array of length "numArgsOut" containing the output
     /// arguments.</returns>
     ///
-    public Object[] PlotData(int numArgsOut, Object x, Object y)
+    public MWArray[] PlotData(int numArgsOut, MWArray x, MWArray y)
     {
       return mcr.EvaluateFunction(numArgsOut, "PlotData", x, y);
     }
 
 
     /// <summary>
-    /// Provides an interface for the PlotData function in which the input and output
-    /// arguments are specified as an array of Objects.
-    /// </summary>
-    /// <remarks>
-    /// This method will allocate and return by reference the output argument
-    /// array.<newpara></newpara>
-    /// </remarks>
-    /// <param name="numArgsOut">The number of output arguments to return</param>
-    /// <param name= "argsOut">Array of Object output arguments</param>
-    /// <param name= "argsIn">Array of Object input arguments</param>
-    /// <param name= "varArgsIn">Array of Object representing variable input
-    /// arguments</param>
-    ///
-    [MATLABSignature("PlotData", 2, 0, 0)]
-    protected void PlotData(int numArgsOut, ref Object[] argsOut, Object[] argsIn, params Object[] varArgsIn)
-    {
-        mcr.EvaluateFunctionForTypeSafeCall("PlotData", numArgsOut, ref argsOut, argsIn, varArgsIn);
-    }
-    /// <summary>
-    /// Provides a void output, 0-input Objectinterface to the plotDummyData MATLAB
+    /// Provides a void output, 0-input MWArrayinterface to the plotDummyData MATLAB
     /// function.
     /// </summary>
     /// <remarks>
@@ -379,27 +340,12 @@ namespace PlotFigureComNative
     ///
     public void plotDummyData()
     {
-      mcr.EvaluateFunction(0, "plotDummyData", new Object[]{});
+      mcr.EvaluateFunction(0, "plotDummyData", new MWArray[]{});
     }
 
 
     /// <summary>
-    /// Provides a void output, 1-input Objectinterface to the plotDummyData MATLAB
-    /// function.
-    /// </summary>
-    /// <remarks>
-    /// </remarks>
-    /// <param name="varargin">Array of Objects representing the input arguments 1
-    /// through varargin.length</param>
-    ///
-    public void plotDummyData(params Object[] varargin)
-    {
-      mcr.EvaluateFunction(0, "plotDummyData", varargin);
-    }
-
-
-    /// <summary>
-    /// Provides the standard 0-input Object interface to the plotDummyData MATLAB
+    /// Provides the standard 0-input MWArray interface to the plotDummyData MATLAB
     /// function.
     /// </summary>
     /// <remarks>
@@ -408,50 +354,12 @@ namespace PlotFigureComNative
     /// <returns>An Array of length "numArgsOut" containing the output
     /// arguments.</returns>
     ///
-    public Object[] plotDummyData(int numArgsOut)
+    public MWArray[] plotDummyData(int numArgsOut)
     {
-      return mcr.EvaluateFunction(numArgsOut, "plotDummyData", new Object[]{});
+      return mcr.EvaluateFunction(numArgsOut, "plotDummyData", new MWArray[]{});
     }
 
 
-    /// <summary>
-    /// Provides the standard 1-input Object interface to the plotDummyData MATLAB
-    /// function.
-    /// </summary>
-    /// <remarks>
-    /// </remarks>
-    /// <param name="numArgsOut">The number of output arguments to return.</param>
-    /// <param name="varargin">Array of Objects representing the input arguments 1
-    /// through varargin.length</param>
-    /// <returns>An Array of length "numArgsOut" containing the output
-    /// arguments.</returns>
-    ///
-    public Object[] plotDummyData(int numArgsOut, params Object[] varargin)
-    {
-      return mcr.EvaluateFunction(numArgsOut, "plotDummyData", varargin);
-    }
-
-
-    /// <summary>
-    /// Provides an interface for the plotDummyData function in which the input and
-    /// output
-    /// arguments are specified as an array of Objects.
-    /// </summary>
-    /// <remarks>
-    /// This method will allocate and return by reference the output argument
-    /// array.<newpara></newpara>
-    /// </remarks>
-    /// <param name="numArgsOut">The number of output arguments to return</param>
-    /// <param name= "argsOut">Array of Object output arguments</param>
-    /// <param name= "argsIn">Array of Object input arguments</param>
-    /// <param name= "varArgsIn">Array of Object representing variable input
-    /// arguments</param>
-    ///
-    [MATLABSignature("plotDummyData", 0, 0, 1)]
-    protected void plotDummyData(int numArgsOut, ref Object[] argsOut, Object[] argsIn, params Object[] varArgsIn)
-    {
-        mcr.EvaluateFunctionForTypeSafeCall("plotDummyData", numArgsOut, ref argsOut, argsIn, varArgsIn);
-    }
 
     /// <summary>
     /// This method will cause a MATLAB figure window to behave as a modal dialog box.
