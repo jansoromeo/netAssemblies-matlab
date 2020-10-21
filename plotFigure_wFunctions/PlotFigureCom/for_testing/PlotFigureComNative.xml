@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PlotFigureComNative</name>
+    </assembly>
+    <members>
+        <member name="T:PlotFigureComNative.Class1">
+            <summary>
+            The Class1 class provides a CLS compliant, Object (native) interface to the MATLAB
+            functions contained in the files:
+            <newpara></newpara>
+            \\Mac\Home\Dropbox
+            (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\getLineCoordinat
+            es.m
+            <newpara></newpara>
+            \\Mac\Home\Dropbox
+            (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\InitFigure.m
+            <newpara></newpara>
+            \\Mac\Home\Dropbox
+            (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotData.m
+            <newpara></newpara>
+            \\Mac\Home\Dropbox
+            (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\plotDummyData.m
+            </summary>
+            <remarks>
+            @Version 1.0
+            </remarks>
+        </member>
+        <member name="M:PlotFigureComNative.Class1.#cctor">
+            <summary internal= "true">
+            The static constructor instantiates and initializes the MATLAB Runtime instance.
+            </summary>
+        </member>
+        <member name="M:PlotFigureComNative.Class1.#ctor">
+            <summary>
+            Constructs a new instance of the Class1 class.
+            </summary>
+        </member>
+        <member name="M:PlotFigureComNative.Class1.Finalize">
+            <summary internal= "true">
+            Class destructor called by the CLR garbage collector.
+            </summary>
+        </member>
+        <member name="M:PlotFigureComNative.Class1.Dispose">
+            <summary>
+            Frees the native resources associated with this object
+            </summary>
+        </member>
+        <member name="M:PlotFigureComNative.Class1.Dispose(System.Boolean)">
+            <summary internal= "true">
+            Internal dispose function
+            </summary>
+        </member>
+        <member name="M:PlotFigureComNative.Class1.getLineCoordinates">
+             <summary>
+             Provides a single output, 0-input Objectinterface to the getLineCoordinates
+             MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.getLineCoordinates(System.Int32)">
+             <summary>
+             Provides the standard 0-input Object interface to the getLineCoordinates MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.getLineCoordinates(System.Int32,System.Object[]@,System.Object[],System.Object[])">
+             <summary>
+             Provides an interface for the getLineCoordinates function in which the input and
+             output
+             arguments are specified as an array of Objects.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of Object output arguments</param>
+             <param name= "argsIn">Array of Object input arguments</param>
+             <param name= "varArgsIn">Array of Object representing variable input
+             arguments</param>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.InitFigure">
+             <summary>
+             Provides a void output, 0-input Objectinterface to the InitFigure MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             close and clean up previous figures 
+             </remarks>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.InitFigure(System.Int32)">
+             <summary>
+             Provides the standard 0-input Object interface to the InitFigure MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             close and clean up previous figures 
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.InitFigure(System.Int32,System.Object[]@,System.Object[],System.Object[])">
+             <summary>
+             Provides an interface for the InitFigure function in which the input and output
+             arguments are specified as an array of Objects.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             close and clean up previous figures 
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of Object output arguments</param>
+             <param name= "argsIn">Array of Object input arguments</param>
+             <param name= "varArgsIn">Array of Object representing variable input
+             arguments</param>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.PlotData">
+             <summary>
+             Provides a void output, 0-input Objectinterface to the PlotData MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.PlotData(System.Object)">
+             <summary>
+             Provides a void output, 1-input Objectinterface to the PlotData MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="x">Input argument #1</param>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.PlotData(System.Object,System.Object)">
+             <summary>
+             Provides a void output, 2-input Objectinterface to the PlotData MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="x">Input argument #1</param>
+             <param name="y">Input argument #2</param>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.PlotData(System.Int32)">
+             <summary>
+             Provides the standard 0-input Object interface to the PlotData MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.PlotData(System.Int32,System.Object)">
+             <summary>
+             Provides the standard 1-input Object interface to the PlotData MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="x">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.PlotData(System.Int32,System.Object,System.Object)">
+             <summary>
+             Provides the standard 2-input Object interface to the PlotData MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="x">Input argument #1</param>
+             <param name="y">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.PlotData(System.Int32,System.Object[]@,System.Object[],System.Object[])">
+             <summary>
+             Provides an interface for the PlotData function in which the input and output
+             arguments are specified as an array of Objects.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of Object output arguments</param>
+             <param name= "argsIn">Array of Object input arguments</param>
+             <param name= "varArgsIn">Array of Object representing variable input
+             arguments</param>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.plotDummyData">
+             <summary>
+             Provides a void output, 0-input Objectinterface to the plotDummyData MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.plotDummyData(System.Object[])">
+             <summary>
+             Provides a void output, 1-input Objectinterface to the plotDummyData MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="varargin">Array of Objects representing the input arguments 1
+             through varargin.length</param>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.plotDummyData(System.Int32)">
+             <summary>
+             Provides the standard 0-input Object interface to the plotDummyData MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.plotDummyData(System.Int32,System.Object[])">
+             <summary>
+             Provides the standard 1-input Object interface to the plotDummyData MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="varargin">Array of Objects representing the input arguments 1
+             through varargin.length</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.plotDummyData(System.Int32,System.Object[]@,System.Object[],System.Object[])">
+             <summary>
+             Provides an interface for the plotDummyData function in which the input and
+             output
+             arguments are specified as an array of Objects.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of Object output arguments</param>
+             <param name= "argsIn">Array of Object input arguments</param>
+             <param name= "varArgsIn">Array of Object representing variable input
+             arguments</param>
+            
+        </member>
+        <member name="M:PlotFigureComNative.Class1.WaitForFiguresToDie">
+             <summary>
+             This method will cause a MATLAB figure window to behave as a modal dialog box.
+             The method will not return until all the figure windows associated with this
+             component have been closed.
+             </summary>
+             <remarks>
+             An application should only call this method when required to keep the
+             MATLAB figure window from disappearing.  Other techniques, such as calling
+             Console.ReadLine() from the application should be considered where
+             possible.</remarks>
+            
+        </member>
+    </members>
+</doc>
