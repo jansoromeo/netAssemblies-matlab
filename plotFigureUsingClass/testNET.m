@@ -1,3 +1,3 @@
-function testNET()
+function a = testNET(x,y)
     a = PlotFigure();
-    a.plotDummyData();
+    a.plotDummyData(x,y);
