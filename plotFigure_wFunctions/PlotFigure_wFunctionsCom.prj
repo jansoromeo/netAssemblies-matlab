@@ -3,7 +3,7 @@
     <param.appname>PlotFigure_wFunctionsCom</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>1.0</param.version>
+    <param.version>1.1</param.version>
     <param.authnamewatermark />
     <param.email />
     <param.company />
@@ -51,7 +51,6 @@
     <unset>
       <param.icon />
       <param.icons />
-      <param.version />
       <param.authnamewatermark />
       <param.email />
       <param.company />
@@ -98,17 +97,21 @@
     </unset>
     <fileset.exports>
       <file>${PROJECT_ROOT}\getLineCoordinates.m</file>
+      <file>${PROJECT_ROOT}\HideFigure.m</file>
       <file>${PROJECT_ROOT}\InitFigure.m</file>
       <file>${PROJECT_ROOT}\PlotData.m</file>
       <file>${PROJECT_ROOT}\plotDummyData.m</file>
+      <file>${PROJECT_ROOT}\ShowFigure.m</file>
     </fileset.exports>
     <fileset.classes>
       <entity.package name="">
         <entity.class name="Class1">
           <file>${PROJECT_ROOT}\getLineCoordinates.m</file>
+          <file>${PROJECT_ROOT}\HideFigure.m</file>
           <file>${PROJECT_ROOT}\InitFigure.m</file>
           <file>${PROJECT_ROOT}\PlotData.m</file>
           <file>${PROJECT_ROOT}\plotDummyData.m</file>
+          <file>${PROJECT_ROOT}\ShowFigure.m</file>
         </entity.class>
       </entity.package>
     </fileset.classes>
@@ -117,9 +120,11 @@
     <fileset.package />
     <fileset.examples>
       <file>${PROJECT_ROOT}\getLineCoordinatesSample1.m</file>
+      <file>${PROJECT_ROOT}\HideFigureSample1.m</file>
       <file>${PROJECT_ROOT}\InitFigureSample1.m</file>
       <file>${PROJECT_ROOT}\PlotDataSample1.m</file>
       <file>${PROJECT_ROOT}\plotDummyDataSample1.m</file>
+      <file>${PROJECT_ROOT}\ShowFigureSample1.m</file>
     </fileset.examples>
     <fileset.documentation />
     <build-deliverables>

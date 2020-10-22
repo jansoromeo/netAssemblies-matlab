@@ -1,18 +1,22 @@
 /*
 * MATLAB Compiler: 8.1 (R2020b)
-* Date: Wed Oct 21 15:24:05 2020
+* Date: Thu Oct 22 15:35:00 2020
 * Arguments:
-* "-B""macro_default""-W""dotnet:PlotFigure_wFunctionsCom,Class1,4.0,private,version=1.0""
+* "-B""macro_default""-W""dotnet:PlotFigure_wFunctionsCom,Class1,4.0,private,version=1.1""
 * -T""link:lib""-d""\\Mac\Home\Dropbox
 * (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotFigure_wFunction
 * sCom\for_testing""-v""class{Class1:\\Mac\Home\Dropbox
 * (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\getLineCoordinates.m
 * ,\\Mac\Home\Dropbox
+* (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\HideFigure.m,\\Mac\H
+* ome\Dropbox
 * (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\InitFigure.m,\\Mac\H
 * ome\Dropbox
 * (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\PlotData.m,\\Mac\Hom
 * e\Dropbox
-* (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\plotDummyData.m}"
+* (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\plotDummyData.m,\\Ma
+* c\Home\Dropbox
+* (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\ShowFigure.m}"
 */
 using System;
 using System.Reflection;
@@ -36,6 +40,9 @@ namespace PlotFigure_wFunctionsComNative
   /// es.m
   /// <newpara></newpara>
   /// \\Mac\Home\Dropbox
+  /// (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\HideFigure.m
+  /// <newpara></newpara>
+  /// \\Mac\Home\Dropbox
   /// (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\InitFigure.m
   /// <newpara></newpara>
   /// \\Mac\Home\Dropbox
@@ -43,9 +50,12 @@ namespace PlotFigure_wFunctionsComNative
   /// <newpara></newpara>
   /// \\Mac\Home\Dropbox
   /// (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\plotDummyData.m
+  /// <newpara></newpara>
+  /// \\Mac\Home\Dropbox
+  /// (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\ShowFigure.m
   /// </summary>
   /// <remarks>
-  /// @Version 1.0
+  /// @Version 1.1
   /// </remarks>
   public class Class1 : IDisposable
   {
@@ -210,6 +220,53 @@ namespace PlotFigure_wFunctionsComNative
     protected void getLineCoordinates(int numArgsOut, ref Object[] argsOut, Object[] argsIn, params Object[] varArgsIn)
     {
         mcr.EvaluateFunctionForTypeSafeCall("getLineCoordinates", numArgsOut, ref argsOut, argsIn, varArgsIn);
+    }
+    /// <summary>
+    /// Provides a void output, 0-input Objectinterface to the HideFigure MATLAB
+    /// function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    ///
+    public void HideFigure()
+    {
+      mcr.EvaluateFunction(0, "HideFigure", new Object[]{});
+    }
+
+
+    /// <summary>
+    /// Provides the standard 0-input Object interface to the HideFigure MATLAB function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return.</param>
+    /// <returns>An Array of length "numArgsOut" containing the output
+    /// arguments.</returns>
+    ///
+    public Object[] HideFigure(int numArgsOut)
+    {
+      return mcr.EvaluateFunction(numArgsOut, "HideFigure", new Object[]{});
+    }
+
+
+    /// <summary>
+    /// Provides an interface for the HideFigure function in which the input and output
+    /// arguments are specified as an array of Objects.
+    /// </summary>
+    /// <remarks>
+    /// This method will allocate and return by reference the output argument
+    /// array.<newpara></newpara>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return</param>
+    /// <param name= "argsOut">Array of Object output arguments</param>
+    /// <param name= "argsIn">Array of Object input arguments</param>
+    /// <param name= "varArgsIn">Array of Object representing variable input
+    /// arguments</param>
+    ///
+    [MATLABSignature("HideFigure", 0, 0, 0)]
+    protected void HideFigure(int numArgsOut, ref Object[] argsOut, Object[] argsIn, params Object[] varArgsIn)
+    {
+        mcr.EvaluateFunctionForTypeSafeCall("HideFigure", numArgsOut, ref argsOut, argsIn, varArgsIn);
     }
     /// <summary>
     /// Provides a void output, 0-input Objectinterface to the InitFigure MATLAB
@@ -418,6 +475,53 @@ namespace PlotFigure_wFunctionsComNative
     protected void plotDummyData(int numArgsOut, ref Object[] argsOut, Object[] argsIn, params Object[] varArgsIn)
     {
         mcr.EvaluateFunctionForTypeSafeCall("plotDummyData", numArgsOut, ref argsOut, argsIn, varArgsIn);
+    }
+    /// <summary>
+    /// Provides a void output, 0-input Objectinterface to the ShowFigure MATLAB
+    /// function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    ///
+    public void ShowFigure()
+    {
+      mcr.EvaluateFunction(0, "ShowFigure", new Object[]{});
+    }
+
+
+    /// <summary>
+    /// Provides the standard 0-input Object interface to the ShowFigure MATLAB function.
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return.</param>
+    /// <returns>An Array of length "numArgsOut" containing the output
+    /// arguments.</returns>
+    ///
+    public Object[] ShowFigure(int numArgsOut)
+    {
+      return mcr.EvaluateFunction(numArgsOut, "ShowFigure", new Object[]{});
+    }
+
+
+    /// <summary>
+    /// Provides an interface for the ShowFigure function in which the input and output
+    /// arguments are specified as an array of Objects.
+    /// </summary>
+    /// <remarks>
+    /// This method will allocate and return by reference the output argument
+    /// array.<newpara></newpara>
+    /// </remarks>
+    /// <param name="numArgsOut">The number of output arguments to return</param>
+    /// <param name= "argsOut">Array of Object output arguments</param>
+    /// <param name= "argsIn">Array of Object input arguments</param>
+    /// <param name= "varArgsIn">Array of Object representing variable input
+    /// arguments</param>
+    ///
+    [MATLABSignature("ShowFigure", 0, 0, 0)]
+    protected void ShowFigure(int numArgsOut, ref Object[] argsOut, Object[] argsIn, params Object[] varArgsIn)
+    {
+        mcr.EvaluateFunctionForTypeSafeCall("ShowFigure", numArgsOut, ref argsOut, argsIn, varArgsIn);
     }
 
     /// <summary>

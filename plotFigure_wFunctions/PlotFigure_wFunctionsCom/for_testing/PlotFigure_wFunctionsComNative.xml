@@ -14,6 +14,9 @@
             es.m
             <newpara></newpara>
             \\Mac\Home\Dropbox
+            (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\HideFigure.m
+            <newpara></newpara>
+            \\Mac\Home\Dropbox
             (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\InitFigure.m
             <newpara></newpara>
             \\Mac\Home\Dropbox
@@ -21,9 +24,12 @@
             <newpara></newpara>
             \\Mac\Home\Dropbox
             (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\plotDummyData.m
+            <newpara></newpara>
+            \\Mac\Home\Dropbox
+            (Personal)\Work\Git_Repo\netAssemblies-matlab\plotFigure_wFunctions\ShowFigure.m
             </summary>
             <remarks>
-            @Version 1.0
+            @Version 1.1
             </remarks>
         </member>
         <member name="M:PlotFigure_wFunctionsComNative.Class1.#cctor">
@@ -77,6 +83,42 @@
              <summary>
              Provides an interface for the getLineCoordinates function in which the input and
              output
+             arguments are specified as an array of Objects.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of Object output arguments</param>
+             <param name= "argsIn">Array of Object input arguments</param>
+             <param name= "varArgsIn">Array of Object representing variable input
+             arguments</param>
+            
+        </member>
+        <member name="M:PlotFigure_wFunctionsComNative.Class1.HideFigure">
+             <summary>
+             Provides a void output, 0-input Objectinterface to the HideFigure MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+            
+        </member>
+        <member name="M:PlotFigure_wFunctionsComNative.Class1.HideFigure(System.Int32)">
+             <summary>
+             Provides the standard 0-input Object interface to the HideFigure MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:PlotFigure_wFunctionsComNative.Class1.HideFigure(System.Int32,System.Object[]@,System.Object[],System.Object[])">
+             <summary>
+             Provides an interface for the HideFigure function in which the input and output
              arguments are specified as an array of Objects.
              </summary>
              <remarks>
@@ -236,6 +278,42 @@
              <summary>
              Provides an interface for the plotDummyData function in which the input and
              output
+             arguments are specified as an array of Objects.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of Object output arguments</param>
+             <param name= "argsIn">Array of Object input arguments</param>
+             <param name= "varArgsIn">Array of Object representing variable input
+             arguments</param>
+            
+        </member>
+        <member name="M:PlotFigure_wFunctionsComNative.Class1.ShowFigure">
+             <summary>
+             Provides a void output, 0-input Objectinterface to the ShowFigure MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+            
+        </member>
+        <member name="M:PlotFigure_wFunctionsComNative.Class1.ShowFigure(System.Int32)">
+             <summary>
+             Provides the standard 0-input Object interface to the ShowFigure MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:PlotFigure_wFunctionsComNative.Class1.ShowFigure(System.Int32,System.Object[]@,System.Object[],System.Object[])">
+             <summary>
+             Provides an interface for the ShowFigure function in which the input and output
              arguments are specified as an array of Objects.
              </summary>
              <remarks>
